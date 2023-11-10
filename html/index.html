@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Store Page Thing</title>
+  <title>Шум</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="/css/style.css">
 
@@ -37,7 +37,7 @@
         <div :class="['rela-block', 'nav-bar']">
             <div class="rela-block gutter-container inner-nav-container">
                 <div :class="['nav-flip', 'top', searchOpen?'active':'']">
-                    <div class="abs-center logo link">tunes.</div>
+                    <div class="abs-center logo link">шум.</div>
                     <div :class="['left', 'ui-icon', 'menu-button', menuOpen?'active':'']" @click="menuOpen = !menuOpen">
                         <svg viewbox="0 0 40 50" class="button-svg">
                             <path d="M 7 15 L 33 15"/>
@@ -67,7 +67,7 @@
         <div class="rela-block page-section top-section">
             <div class="gutter-container">
                 <div class="rela-block section-nav">
-                    <h2 class="left">New Item Showcase</h2>
+                    <h2 class="left">New albums Showcase</h2>
                 </div>
                 <div class="rela-block new-item-container">
                     <div :class="['vert-center', 'move-arrow', 'left-arrow', newItemPos<=0?'disabled':'']" @click="updateNewItemPos(-1)"><</div>
@@ -86,7 +86,7 @@
         <div class="rela-block page-section grey product-section">
             <div class="rela-block gutter-container">
                 <div class="rela-block section-nav">
-                    <h2 class="left">All Products<span v-show="currentCatg !== 'All'">/{{currentCatg}}</span></h2>
+                    <h2 class="left">Main<span v-show="currentCatg !== 'All'">/{{currentCatg}}</span></h2>
                     <div class="right category-select">
                         <div v-for="c in catg" :class="['rela-inline', 'category', currentCatg===c?'active':'']"
                              @click="currentCatg = c; updateFilteredProducts()" >{{c}}</div>
@@ -114,7 +114,7 @@
         </div>
         <div class="rela-block footer">
             <div class="rela-block gutter-container inner-footer-container">
-                <div class="logo">tunes.</div>
+                <div class="logo">шум.</div>
             </div>                
         </div>
     </div>
