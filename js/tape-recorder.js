@@ -20,7 +20,7 @@ new Vue({
           name: "Who Is Alone",
           artist: "The Dream The Chase",
           cover: "https://raw.githubusercontent.com/ADrevk/Shum/main/pic/Thedream.jpg",
-          source: "https://raw.githubusercontent.com/muhammederdem/mini-player/master/mp3/1.mp3",
+          source: "https://github.com/ADrevk/Shum/blob/main/music/1.mp3",
           url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
           favorited: false
         }
